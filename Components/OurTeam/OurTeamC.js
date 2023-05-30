@@ -1,12 +1,13 @@
 import Image from "next/image";
 import monir from "../../assets/ourteam/monir.jpg";
+import saidur from "../../assets/ourteam/saidur.jpg";
 export const OurTeamC = () => {
     const teams = [
         {
             id: 1,
             name: "Saidur Rahman",
             designation: "Founder",
-            imageUrl: monir,
+            imageUrl: saidur,
         },
         {
             id: 2,
@@ -29,17 +30,33 @@ export const OurTeamC = () => {
     ];
     return (
         <div className={`pt-[25px]`}>
-            <h1 className="text-[32px] font-semibold">Meet our team</h1>
+            <h1 className="text-[32px] font-semibold text-center">Meet Our Talented Team Members</h1>
+            <p className="text-[12px] text-center w-full md:w-1/3 lg:w-1/2 mx-auto text-gray-400">
+                we believe in the strength of teamwork and collaboration. Our dedicated team members bring together diverse backgrounds, skills, and
+                expertise to drive innovation and deliver exceptional results. With a shared passion for excellence, we foster an environment where
+                ideas thrive, creativity blossoms, and challenges are conquered.
+            </p>
 
             <div className="mt-[20px] grid-cols-1 grid md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
                 {teams?.map(member => {
                     return (
-                        <div key={member.id} className=" ring-gray-200 ring-[1px] w-full md:w-[260px] h-[400px] overflow-hidden">
-                            <div className="">
-                                <Image className="hover:scale-110 duration-300 cursor-pointer" src={member.imageUrl} alt="profile image" />
+                        <div
+                            key={member.id}
+                            className=" bg-gray-100 hover:bg-primary w-full md:w-[260px] h-[190px] duration-300 hover:h-[320px] overflow-hidden flex flex-col items-center p-[12px] py-[20px] rounded-[6px] group cursor-pointer"
+                            style={{ transition: "height 0.5s ease-in-out" }}
+                        >
+                            <div className="w-[80px] h-[80px] rounded-full border-[3px] border-primary group-hover:border-white duration-300">
+                                <Image
+                                    className="hover:scale-110 duration-300 h-full w-full rounded-full cursor-pointer"
+                                    src={member.imageUrl}
+                                    alt="profile image"
+                                    width={80}
+                                    height={80}
+                                    loading="lazy"
+                                />
                             </div>
-                            <div className="flex flex-col justify-between items-center mt-[15px]">
-                                <h3 className="text-[20px] text-gray-600">{member.name}</h3>
+                            <div className="flex flex-col justify-between items-center mt-[15px] ">
+                                <h3 className="text-[20px] font-semibold text-gray-600 group-hover:text-white">{member.name}</h3>
                                 <p className="text-[16px] text-gray-400">{member.designation}</p>
                             </div>
                         </div>

@@ -11,6 +11,9 @@ module.exports = withMT({
             fontFamily: {
                 sans: ["Source Serif Pro", "serif"],
             },
+            colors: {
+                primary: "#0056D6",
+            },
         },
     },
     plugins: [],
