@@ -28,7 +28,7 @@ export const BannerFeature = () => {
         },
     ];
     return (
-        <div className="h-[250px] max-w-[1070px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[100px]">
+        <div className="h-[250px] mt-[100px] max-w-[1070px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[100px]">
             {data?.map(item => {
                 return (
                     <div key={item.id} className="flex flex-col items-center">

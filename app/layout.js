@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <SANavbar />
-                <main className="max-w-[1400px] mx-auto lg:h-[calc(100vh-74px)] h-[calc(100vh-57px)] px-[16px] md:px-[30px]">{children}</main>
+                <main>{children}</main>
             </body>
         </html>
     );
