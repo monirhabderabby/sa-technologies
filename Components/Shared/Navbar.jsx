@@ -16,7 +16,7 @@ export default function SANavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 px-3 duration-200 rounded-sm hover:bg-white/10 font-normal text-white"
+                className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75  cursor-pointer"
             >
                 <Link href="/">Home</Link>
             </Typography>
@@ -24,7 +24,7 @@ export default function SANavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 px-3 duration-200 rounded-sm hover:bg-white/10 font-normal text-white"
+                className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75"
             >
                 <Link href="/services">Services</Link>
             </Typography>
@@ -32,7 +32,7 @@ export default function SANavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 px-3 duration-200 hover:bg-white/10 rounded-sm font-normal text-white"
+                className="p-1 px-3 duration-200 hover:bg-secondary/50 rounded-sm font-normal text-primary/75 cursor-pointer"
             >
                 <Link href="/our_team">Our Team</Link>
             </Typography>
@@ -40,7 +40,7 @@ export default function SANavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 px-3 duration-200 rounded-sm hover:bg-white/10 font-normal text-white"
+                className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75 cursor-pointer"
             >
                 <Link href="/about">About</Link>
             </Typography>
@@ -48,7 +48,7 @@ export default function SANavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1  px-3 duration-200 rounded-sm hover:bg-white/10 font-normal text-white"
+                className="p-1  px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75 cursor-pointer"
             >
                 <Link href="/contact">Contact Us</Link>
             </Typography>
@@ -57,8 +57,8 @@ export default function SANavbar() {
 
     return (
         <>
-            <Navbar className="sticky inset-0 z-10 h-max max-w-full mx-auto bg-black/50 rounded-none py-2 px-4 lg:px-8 lg:py-4 ">
-                <div className="flex items-center justify-between text-white max-w-[1400px] mx-auto ">
+            <Navbar className="sticky inset-0 z-10 h-max max-w-full mx-auto shadow-none bg-primary/20 rounded-none py-2 px-4 lg:px-8 lg:py-4 ">
+                <div className="flex items-center justify-between text-black max-w-[1400px] mx-auto ">
                     <Typography className="mr-4 cursor-pointer py-1.5 font-medium">
                         <Link href="/">SA TECHNOLOGIES</Link>
                     </Typography>
