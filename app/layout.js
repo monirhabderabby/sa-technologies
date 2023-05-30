@@ -1,4 +1,4 @@
-import SANavbar from "@/Components/Shared/navbar";
+import SANavbar from "@/Components/Shared/Navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
