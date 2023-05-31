@@ -10,6 +10,8 @@ module.exports = withMT({
             },
             fontFamily: {
                 sans: ["Source Serif Pro", "serif"],
+                inter: ["var(--font-inter)"],
+                lato: ["var(--font-inter)"],
             },
             colors: {
                 primary: "#0056D6",
