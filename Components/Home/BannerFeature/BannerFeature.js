@@ -29,17 +29,19 @@ export const BannerFeature = () => {
     ];
     return (
         <div>
-            <section className="header flex flex-col justify-center items-center mt-[112px]">
+            <section className="header flex flex-col justify-center items-center mt-[112px] h-full relative">
                 <p className="bg-secondary w-[157px] h-[40px] rounded-[20px] flex justify-center items-center font-inter font-normal">Why SA-TECH</p>
                 <h1 className={`text-[#160637] text-[32px] font-bold font-inter`}>Top three Services</h1>
             </section>
-            <div className="h-[250px] mt-[50px] max-w-[1070px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[100px]">
+            <div className="h-auto lg:h-[250px] mt-[50px] max-w-[1070px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[100px]">
                 {data?.map(item => {
                     return (
                         <div key={item.id} className="flex flex-col items-center">
-                            <Image src={item.icon} loading="lazy" className="mb-[40px]" />
-                            <h1 className="text-[#424242] text-[24px] font-medium leading-[24px] mb-[20px]">{item.title}</h1>
-                            <p className="text-[#757575] text-[18px] leading-[28px]  text-center font-lato font-normal">{item.description}</p>
+                            <Image src={item.icon} loading="lazy" className="mb-[40px] w-auto md:w-1/3 lg:w-auto" />
+                            <h1 className="text-[#424242] text-[24px] text-center font-semibold font-inter leading-[24px] mb-[20px]">{item.title}</h1>
+                            <p className="text-[#757575] md:text-[16px] lg:text-[18px] leading-[28px] text-center font-lato font-normal">
+                                {item.description}
+                            </p>
                         </div>
                     );
                 })}
