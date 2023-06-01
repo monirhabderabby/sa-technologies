@@ -1,7 +1,7 @@
 "use client";
 import SANavbar from "@/Components/Shared/Navbar";
 import { Spinner } from "@/Components/Shared/loader/Spinner";
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import "./globals.css";
 
 export const metadata = {
@@ -11,7 +11,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    const [loading, setLoading] = useState(false);
     return (
         <html lang="en">
             <body>
