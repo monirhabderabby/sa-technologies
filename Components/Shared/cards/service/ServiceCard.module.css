@@ -1,0 +1,46 @@
+.service_item {
+    padding: 30px 25px;
+    border-radius: 5px;
+    border: 1px solid #eef6fd;
+    background: #ffffff;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 300px;
+}
+.service_item::before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-image: url("https://mediusware.com/assets/service-bg.97394cce.svg");
+    top: 0;
+    right: -300px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.service_item::after {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-image: url("https://mediusware.com/assets/service-bg.97394cce.svg");
+    left: -300px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-size: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.service_item:hover::after {
+    left: -200px;
+}
+.service_item:hover::before {
+    right: -200px;
+}

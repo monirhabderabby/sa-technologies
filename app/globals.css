@@ -12,3 +12,7 @@
     background-color: #a32bca;
     border-radius: 10px;
 }
+
+.bg-liner {
+    background-image: linear-gradient(180deg, #f3f9f9 0%, rgba(238, 246, 253, 0) 100%);
+}

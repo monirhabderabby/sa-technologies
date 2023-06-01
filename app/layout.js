@@ -1,8 +1,8 @@
+"use client";
 import SANavbar from "@/Components/Shared/Navbar";
-import { Inter } from "next/font/google";
+import { Spinner } from "@/Components/Shared/loader/Spinner";
+import { Suspense, useState } from "react";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
     title: "SA Technologies",
@@ -11,11 +11,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const [loading, setLoading] = useState(false);
     return (
         <html lang="en">
             <body>
                 <SANavbar />
-                <main>{children}</main>
+                <Suspense fallback={<Spinner />}>{loading ? <Spinner /> : <main>{children}</main>}</Suspense>
             </body>
         </html>
     );

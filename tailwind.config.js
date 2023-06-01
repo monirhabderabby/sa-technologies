@@ -19,6 +19,9 @@ module.exports = withMT({
             boxShadow: {
                 hightlighted: "0px 40px 80px rgba(155,149,149,0.16)",
             },
+            background: {
+                light: "linear-gradient(180deg,#F3F9F9 0%,rgba(238,246,253,0) 100%)",
+            },
         },
     },
     plugins: [],
