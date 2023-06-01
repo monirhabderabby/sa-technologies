@@ -1,4 +1,3 @@
-"use client";
 import SANavbar from "@/Components/Shared/Navbar";
 import { Spinner } from "@/Components/Shared/loader/Spinner";
 import { Suspense } from "react";
