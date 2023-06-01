@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <SANavbar />
-                <Suspense fallback={<Spinner />}>{loading ? <Spinner /> : <main>{children}</main>}</Suspense>
+                <Suspense fallback={<Spinner />}>
+                    <main>{children}</main>
+                </Suspense>
             </body>
         </html>
     );
