@@ -1,4 +1,5 @@
 import { ServiceCard } from "@/Components/Shared/cards/service/ServiceCard";
+import Accountability from "../../../assets/services/account.png";
 import ecommerceSolution from "../../../assets/services/ecommerce_solution.png";
 import websiteDevelopemt from "../../../assets/services/website_development.png";
 
@@ -15,6 +16,13 @@ export const ServicesC = () => {
             title: "E-commerce Solution",
             description: "E-commerce websites need to be user-friendly, but attractive at the same time. Enriched with cutting-edge technology,...",
             icon: ecommerceSolution,
+        },
+        {
+            id: 3,
+            title: "Accountability Solution",
+            description:
+                "Promote transparency and responsibility within organizations. Set goals, track progress, and evaluate performance. Foster a culture of accountability and excellence...",
+            icon: Accountability,
         },
     ];
     return (
