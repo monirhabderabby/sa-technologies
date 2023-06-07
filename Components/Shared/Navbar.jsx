@@ -1,8 +1,14 @@
 "use client";
-import { IconButton, MobileNav, Navbar, Typography } from "@material-tailwind/react";
+
+//Configuration
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+//Third party package
+import { IconButton, MobileNav, Navbar, Typography } from "@material-tailwind/react";
+
+// Components
 import logo from "../../assets/logo/resizedLogo.jpg";
 
 export default function SANavbar() {
