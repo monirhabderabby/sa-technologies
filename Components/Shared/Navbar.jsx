@@ -1,7 +1,9 @@
 "use client";
 import { IconButton, MobileNav, Navbar, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import logo from "../../assets/logo/resizedLogo.jpg";
 
 export default function SANavbar() {
     const [openNav, setOpenNav] = React.useState(false);
@@ -60,7 +62,9 @@ export default function SANavbar() {
             <Navbar className="sticky inset-0 z-10 h-max max-w-full mx-auto shadow-none bg-primary/20 rounded-none py-2 px-4 lg:px-8 lg:py-4 ">
                 <div className="flex items-center justify-between text-black max-w-[1400px] mx-auto ">
                     <Typography className="mr-4 cursor-pointer py-1.5 font-medium">
-                        <Link href="/">SA TECHNOLOGIES</Link>
+                        <Link href="/">
+                            <Image src={logo} loading="lazy" width={145} height={40} />
+                        </Link>
                     </Typography>
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block">{navList}</div>

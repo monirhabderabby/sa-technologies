@@ -18,7 +18,7 @@ export const SuccessHighlight = () => {
         },
     ];
     return (
-        <div className=" mt-[100px] w-full lg:w-[1146px] h-auto md:h-[460px] lg:h-[502px] bg-primary rounded-[20px] shadow-hightlighted px-[20px] lg:px-[121px] py-[40px] md:py-[80px] lg:py-[100px]">
+        <div className=" mt-[100px] w-full lg:w-[1146px] h-auto md:h-[460px] lg:h-[502px] bg-primary rounded-[20px] shadow-hightlighted px-[20px] lg:px-[121px] py-[40px] md:py-[80px] lg:py-[100px] relative">
             <h1 className="text-[40px] md:text-[60px] font-inter font-semibold text-white text-center">Journey of our Success</h1>
             <section className="w-full flex flex-col gap-y-[40px] md:flex-row justify-evenly items-center mt-[73px]">
                 {data?.map(item => {

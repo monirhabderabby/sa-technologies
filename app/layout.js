@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
             <body>
                 <SANavbar />
                 <Suspense fallback={<Spinner />}>
-                    <main className=" bg-[linear-gradient(180deg,_#F3F9F9_0%,_rgba(238,246,253,0)_100%)]">{children}</main>
+                    <main className=" h-auto bg-[linear-gradient(180deg,_#F3F9F9_0%,_rgba(238,246,253,0)_100%)]">{children}</main>
                 </Suspense>
             </body>
         </html>
