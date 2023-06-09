@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 
 //Third party package
-import { IconButton, MobileNav, Navbar, Typography } from "@material-tailwind/react";
+import { Collapse, IconButton, Navbar, Typography } from "@material-tailwind/react";
 
 // Components
 import logo from "../../assets/logo/resizedLogo.jpg";
@@ -99,7 +99,7 @@ export default function SANavbar() {
                         </IconButton>
                     </div>
                 </div>
-                <MobileNav open={openNav}>{navList}</MobileNav>
+                <Collapse open={openNav}>{navList}</Collapse>
             </Navbar>
         </>
     );

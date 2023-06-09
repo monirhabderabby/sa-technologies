@@ -7,9 +7,9 @@ export const ContactFormContainer = () => {
             <Input variant="standard" label="Name" />
             <Input variant="standard" label="Email" />
             <Input variant="standard" label="Messasge" />
-            <div className="w-full flex justify-end mt-[50px]">
+            <section className="w-full flex justify-end mt-[50px]">
                 <PrimaryBtn>Send</PrimaryBtn>
-            </div>
+            </section>
         </div>
     );
 };
