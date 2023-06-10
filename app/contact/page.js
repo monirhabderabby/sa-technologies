@@ -1,5 +1,4 @@
-"use client";
-import { ContactPage } from "@/Components/Shared/ContactForm/ContactPage";
+import { ContactPage } from "@/Components/common/ContactForm/ContactPage";
 import dynamic from "next/dynamic";
 
 const Contact = () => {

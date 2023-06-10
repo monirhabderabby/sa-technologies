@@ -1,7 +1,7 @@
 "use client";
 
-import { ContactFormContainer } from "@/Components/Shared/ContactForm/ContactFormContainer";
-import { ContactInfo } from "@/Components/Shared/ContactForm/ContactInfo";
+import { ContactFormContainer } from "@/Components/common/ContactForm/ContactFormContainer";
+import { ContactInfo } from "@/Components/common/ContactForm/ContactInfo";
 
 export const ContactPage = () => {
     return (

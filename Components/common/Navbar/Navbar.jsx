@@ -9,7 +9,7 @@ import React from "react";
 import { Collapse, IconButton, Navbar, Typography } from "@material-tailwind/react";
 
 // Components
-import logo from "../../assets/logo/resizedLogo.jpg";
+import logo from "./../../../assets/logo/resizedLogo.jpg";
 
 export default function SANavbar() {
     const [openNav, setOpenNav] = React.useState(false);
@@ -18,48 +18,50 @@ export default function SANavbar() {
         window.addEventListener("resize", () => window.innerWidth >= 960 && setOpenNav(false));
     }, []);
 
+    const list = [
+        {
+            id: 1,
+            name: "Home",
+            path: "/",
+        },
+        {
+            id: 2,
+            name: "Services",
+            path: "/services",
+        },
+        {
+            id: 3,
+            name: "Our Team",
+            path: "/our_team",
+        },
+        {
+            id: 4,
+            name: "About",
+            path: "/about",
+        },
+        {
+            id: 5,
+            name: "Contact Us",
+            path: "contact",
+        },
+    ];
+
     const navList = (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75  cursor-pointer"
-            >
-                <Link href="/">Home</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75"
-            >
-                <Link href="/services">Services</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 px-3 duration-200 hover:bg-secondary/50 rounded-sm font-normal text-primary/75 cursor-pointer"
-            >
-                <Link href="/our_team">Our Team</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75 cursor-pointer"
-            >
-                <Link href="/about">About</Link>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1  px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75 cursor-pointer"
-            >
-                <Link href="/contact">Contact Us</Link>
-            </Typography>
+            {list?.map(item => {
+                return (
+                    <Link href={item?.path}>
+                        <Typography
+                            as="li"
+                            variant="small"
+                            color="blue-gray"
+                            className="p-1 px-3 duration-200 rounded-sm hover:bg-secondary/50 font-normal text-primary/75  cursor-pointer"
+                        >
+                            {item?.name}
+                        </Typography>
+                    </Link>
+                );
+            })}
         </ul>
     );
 

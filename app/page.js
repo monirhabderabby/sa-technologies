@@ -3,7 +3,7 @@ import { BannerFeature } from "@/Components/Home/BannerFeature/BannerFeature";
 import { ServicesC } from "@/Components/Home/Services/ServicesC";
 import { SuccessHighlight } from "@/Components/Home/Success_highlight/SuccessHighlight";
 import { Testmonials } from "@/Components/Home/Testmonials/Testmonials";
-import Footer from "@/Components/Shared/Footer";
+import Footer from "@/Components/common/Footer/Footer";
 import "./globals.css";
 
 export default function Home() {

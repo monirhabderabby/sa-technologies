@@ -5,6 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 // components
+import faruk from "../../assets/ourteam/faruk.jpg";
 import monir from "../../assets/ourteam/monir.jpg";
 import saidur from "../../assets/ourteam/saidur.jpg";
 
@@ -17,6 +18,8 @@ export const OurTeamC = () => {
             designation: "Founder",
             imageUrl: saidur,
             facebook: "https://www.facebook.com/saidurrahmanfb",
+            linkedIN: "https://www.linkedin.com/in/saidurrahmanorg/",
+            instagram: "https://www.instagram.com/saidurrahmanorg/",
         },
         {
             id: 2,
@@ -24,6 +27,8 @@ export const OurTeamC = () => {
             designation: "Co-founder",
             imageUrl: monir,
             facebook: "https://www.facebook.com/saidurrahmanfb",
+            linkedIN: "https://www.linkedin.com/in/monirhabderabby/",
+            instagram: "https://www.instagram.com/faruk_hossain8/",
         },
         {
             id: 3,
@@ -31,13 +36,17 @@ export const OurTeamC = () => {
             designation: "Manager",
             imageUrl: monir,
             facebook: "https://www.facebook.com/monirhabderabby/",
+            linkedIN: "https://www.linkedin.com/in/monirhabderabby/",
+            instagram: "https://www.instagram.com/monirhabderabby/",
         },
         {
             id: 4,
             name: "Faruk",
             designation: "Branch Manager, Manikganj",
-            imageUrl: monir,
-            facebook: "https://www.facebook.com/monirhabderabby/",
+            imageUrl: faruk,
+            facebook: "https://www.facebook.com/faruk321.fk",
+            linkedIN: "https://www.linkedin.com/in/faruk-ahmed-b36250196/",
+            instagram: "https://www.instagram.com/faruk_hossain8/",
         },
     ];
     return (
@@ -86,14 +95,14 @@ export const OurTeamC = () => {
                                 </a>
                                 <a
                                     target="_blank"
-                                    href={member?.facebook}
+                                    href={member?.instagram}
                                     className="hover:bg-white/25 duration-300 w-[40px] h-[40px] flex justify-center items-center rounded-full"
                                 >
                                     <AiFillInstagram className="text-white" />
                                 </a>
                                 <a
                                     target="_blank"
-                                    href={member?.facebook}
+                                    href={member?.linkedIN}
                                     className="hover:bg-white/25 duration-300 w-[40px] h-[40px] flex justify-center items-center rounded-full"
                                 >
                                     <FaLinkedinIn className="text-white" />

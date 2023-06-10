@@ -1,5 +1,5 @@
-import SANavbar from "@/Components/Shared/Navbar";
 import { Spinner } from "@/Components/Shared/loader/Spinner";
+import SANavbar from "@/Components/common/Navbar/Navbar";
 import { Suspense } from "react";
 import "./globals.css";
 
