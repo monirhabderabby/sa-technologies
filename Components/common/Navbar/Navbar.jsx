@@ -50,7 +50,7 @@ export default function SANavbar() {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             {list?.map(item => {
                 return (
-                    <Link href={item?.path}>
+                    <Link href={item?.path} key={item?.id}>
                         <Typography
                             as="li"
                             variant="small"

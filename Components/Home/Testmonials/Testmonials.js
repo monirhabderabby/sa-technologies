@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import profile from "../../../assets/testmonials/Profile.png";
 import union from "../../../assets/testmonials/Union.png";
@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 export const Testmonials = () => {
     const testimonials = [
         {
+            id: 1,
             image: profile,
             testimonial:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet purus sed quam scelerisque, in pharetra mi volutpat.",
@@ -19,6 +20,7 @@ export const Testmonials = () => {
             company: "ABC Company",
         },
         {
+            id: 2,
             image: profile,
             testimonial:
                 "Vivamus blandit mauris et finibus dignissim. Quisque consequat, lacus ac feugiat bibendum, justo purus auctor metus, in malesuada nulla ante ac odio.",
@@ -26,6 +28,7 @@ export const Testmonials = () => {
             company: "XYZ Corporation",
         },
         {
+            id: 3,
             image: profile,
             testimonial:
                 "Fusce id erat gravida, pulvinar tellus vitae, gravida elit. Sed ullamcorper, elit eget consequat dapibus, turpis turpis gravida est, et maximus lectus ante in ante.",
@@ -43,10 +46,18 @@ export const Testmonials = () => {
                     What our Customers say
                 </h1>
             </div>
-            <Swiper pagination={true} modules={[Pagination]} className="mySwiper pb-[50px]">
+            <Swiper
+                loop={true}
+                pagination={true}
+                modules={[Pagination, Autoplay]}
+                autoplay={{
+                    delay: 7500,
+                }}
+                className="mySwiper"
+            >
                 {testimonials?.map(item => {
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={item?.id} className="pb-[60px]">
                             <section className="flex flex-col items-center gap-y-[32px] mt-[30px] md:mt-[60px]">
                                 <h3 className="max-w-[600px] text-center text-[#160637] text-[16px] md:text-[20px] lg:text-[24px] font-lato">
                                     "{item?.testimonial}"
