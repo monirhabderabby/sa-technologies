@@ -1,4 +1,5 @@
 import { Spinner } from "@/Components/Shared/loader/Spinner";
+import Footer from "@/Components/common/Footer/Footer";
 import SANavbar from "@/Components/common/Navbar/Navbar";
 import { Suspense } from "react";
 import "./globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
                 <Suspense fallback={<Spinner />}>
                     <main className=" h-auto bg-[linear-gradient(180deg,_#F3F9F9_0%,_rgba(238,246,253,0)_100%)]">{children}</main>
                 </Suspense>
+                <Footer />
             </body>
         </html>
     );

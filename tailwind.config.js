@@ -11,6 +11,7 @@ module.exports = withMT({
             fontFamily: {
                 inter: ["var(--font-inter)"],
                 lato: ["var(--font-inter)"],
+                manrope: ["var(--font-manrope)"],
             },
             colors: {
                 primary: "#0056D6",

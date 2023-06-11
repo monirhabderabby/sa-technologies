@@ -1,4 +1,4 @@
-import { Barlow, Inter, Lato } from "next/font/google";
+import { Barlow, Inter, Lato, Manrope } from "next/font/google";
 
 export const inter = Inter({
     weight: ["300", "400", "500", "600", "700", "800"],
@@ -19,4 +19,11 @@ export const barlow = Barlow({
     subsets: ["latin"],
     display: "swap",
     variable: "--font-barlow",
+});
+
+export const manrope = Manrope({
+    weight: ["300", "400", "500", "600", "700"],
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-manrope",
 });
