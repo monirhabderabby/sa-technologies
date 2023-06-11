@@ -4,6 +4,8 @@ import { ServicesC } from "@/Components/Home/Services/ServicesC";
 import { SuccessHighlight } from "@/Components/Home/Success_highlight/SuccessHighlight";
 import { Testmonials } from "@/Components/Home/Testmonials/Testmonials";
 import Footer from "@/Components/common/Footer/Footer";
+
+// css
 import "./globals.css";
 
 export default function Home() {
@@ -11,7 +13,7 @@ export default function Home() {
         <div className="h-full relative">
             <Banner />
 
-            <div className="max-w-[1200px] mx-auto  h-auto px-[16px] md:px-[30px] pb-[250px] relative">
+            <div className="max-w-[1200px] mx-auto  h-auto px-[16px] md:px-[30px] relative">
                 <BannerFeature />
                 <SuccessHighlight />
                 <ServicesC />
