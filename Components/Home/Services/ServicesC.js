@@ -3,7 +3,7 @@ import Accountability from "../../../assets/services/account.png";
 import ecommerceSolution from "../../../assets/services/ecommerce_solution.png";
 import websiteDevelopemt from "../../../assets/services/website_development.png";
 
-export const ServicesC = () => {
+export const ServicesC = ({ mt, header }) => {
     const data = [
         {
             id: 1,
@@ -26,13 +26,15 @@ export const ServicesC = () => {
         },
     ];
     return (
-        <div className=" mt-[100px] mb-[100px]">
-            <div>
-                <h1 className="text-[36px] leading-[50px] font-medium font-inter text-[#0a0a0a] text-center">Services</h1>
-                <p className="text-center font-thin text-[#0a0a0a] text-[16px] mt-[12px]">We are offering All kinds of IT Solutions Services</p>
-            </div>
+        <div className={`${mt && "mt-[100px]"} mb-[100px]`}>
+            {header && (
+                <div>
+                    <h1 className="text-[36px] leading-[50px] font-medium font-inter text-[#0a0a0a] text-center">Services</h1>
+                    <p className="text-center font-thin text-[#0a0a0a] text-[16px] mt-[12px]">We are offering All kinds of IT Solutions Services</p>
+                </div>
+            )}
 
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-[50px]">
+            <section className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] ${mt ? "mt-[50px]" : "pt-[50px]"}`}>
                 {data?.map(service => {
                     return <ServiceCard key={service?.id} service={service} />;
                 })}

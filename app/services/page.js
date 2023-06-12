@@ -1,5 +1,12 @@
+import { ServicesC } from "@/Components/Home/Services/ServicesC";
+import MainLayout from "@/Components/common/layout/MainLayout";
+
 const Services = () => {
-    return <div className="h-full flex justify-center items-center">Services</div>;
+    return (
+        <MainLayout>
+            <ServicesC />
+        </MainLayout>
+    );
 };
 
 export default Services;

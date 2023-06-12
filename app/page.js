@@ -16,7 +16,7 @@ export default function Home() {
             <MainLayout>
                 <BannerFeature />
                 <SuccessHighlight />
-                <ServicesC />
+                <ServicesC mt={true} header={true} />
                 <Testmonials />
             </MainLayout>
         </div>
