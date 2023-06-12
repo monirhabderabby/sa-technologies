@@ -1,5 +1,14 @@
+"use client";
+import { PrimaryBtn } from "@/Components/Shared/buttons/PrimaryBtn";
+import { useRouter } from "next/navigation";
 import { BannerRight } from "./BannerRight";
+
 export const Banner = () => {
+    const router = useRouter();
+
+    const getInTouchButtonHandler = () => {
+        router.push("/contact");
+    };
     return (
         <div className="h-[calc(100vh-57px)] bg-[linear-gradient(180deg,_#FFFFFF_0%,_#E2F1FF_100%)] flex flex-col justify-evenly items-center lg:flex-row lg:justify-evenly lg:items-center gap-x-[30px]  px-[16px] md:px-[30px]">
             <div className=" font-sans mt-[30px] lg:mt-0 flex flex-col justify-start">
@@ -10,9 +19,9 @@ export const Banner = () => {
                 <p className="text-[#7B7B7B] text-[14px] md:text-[16px] md:w-[502px]">
                     Hire Experienced Developers for Web & Mobile App To Facilitate Your Digital Appetite.
                 </p>
-                <button className="w-[136px] md:w-[182px] h-[37px] lg:h-[47px] bg-primary shadow-[0px_0px_22px_-5px_rgba(225,151,65,0.46)] text-white mt-[30px] hover:bg-[#FE951A] duration-300">
-                    Get in touch
-                </button>
+                <div className="mt-[14px]">
+                    <PrimaryBtn onClick={getInTouchButtonHandler}>Get in touch</PrimaryBtn>
+                </div>
             </div>
             <div className="md:flex-1 flex justify-center lg:flex-none">
                 <BannerRight />

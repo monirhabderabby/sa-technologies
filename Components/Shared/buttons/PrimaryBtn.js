@@ -1,3 +1,10 @@
-export const PrimaryBtn = ({ children }) => {
-    return <button className="py-[10px] px-[50px] bg-primary flex justify-center items-center text-white rounded-[6px]">{children}</button>;
+export const PrimaryBtn = ({ children, onClick }) => {
+    return (
+        <button
+            onClick={onClick}
+            className="py-[10px] px-[50px] bg-primary flex justify-center items-center hover:bg-[#0066ff] duration-300 text-white rounded-[6px]"
+        >
+            {children}
+        </button>
+    );
 };
